@@ -13,10 +13,18 @@
      <p>{ # this is a comment # }</p>
 
     {#     for loops#}
+    <h1>For loop</h1>
      <ul class="active">
          {% for item in some_list %}
       <li>{{ item }}</li>
      {% endfor %}
      </ul>
+
+     <h1>Boolean values</h1>
+      {% if logged_in %}
+          <h1>Welcome to the site</h1>
+      {% else %}
+          <h1>You're logged in</h1>
+      {% endif %}
 </body>
 </html>
