@@ -11,5 +11,12 @@
      <p>{{ some_list }}</p>
      <p>{{ some_dict.inside_key }}</p>
      <p>{ # this is a comment # }</p>
+
+    {#     for loops#}
+     <ul class="active">
+         {% for item in some_list %}
+      <li>{{ item }}</li>
+     {% endfor %}
+     </ul>
 </body>
 </html>
