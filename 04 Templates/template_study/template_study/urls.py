@@ -16,7 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+import template_study.views
+
 urlpatterns = [
     path("my_app/", include("my_app.urls")),
     path('admin/', admin.site.urls),
 ]
+
+handler404 = 'template_study.views.my_custom_page_not_found_view'
