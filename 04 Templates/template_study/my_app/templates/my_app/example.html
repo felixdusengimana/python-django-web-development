@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
+{% load static  %}
+
 {% block content %}
        <h1>Example file</h1>
     <a href="{% url "my_app:variable" %}">Variable Page</a>
+    <img src="{% static 'my_app/django_logo.png' %}" alt="Django Image">
 {% endblock %}
