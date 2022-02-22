@@ -6,7 +6,8 @@
 </head>
 <body>
     <h1>Variable</h1>
-    <p> Hello: {{ fist_name }}{{ last_name }}</p>
+    <p> Hello: {{ fist_name }} {{ last_name | upper }}</p>
+    <p>First name length: {{ fist_name | length }}</p>
      <p>{{ some_list }}</p>
      <p>{{ some_dict.inside_key }}</p>
      <p>{ # this is a comment # }</p>
