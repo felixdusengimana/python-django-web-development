@@ -39,3 +39,11 @@ without `.all()` or `.get()`
 - `.filter()` get data based on condition. They can also be chained together
 - `.exclude()`
 
+### Comparing data(more complexity filtering)
+
+we use `filter lookups` with filter call
+
+ex: Model.objects.filter(name__startswith='s') name is the attribute name. `__` is mandatory.
+more information are found: [link](https://docs.djangoproject.com/en/4.0/ref/models/lookups/) 
+
+### Updating models and also updating entries
