@@ -47,3 +47,7 @@ ex: Model.objects.filter(name__startswith='s') name is the attribute name. `__` 
 more information are found: [link](https://docs.djangoproject.com/en/4.0/ref/models/lookups/) 
 
 ### Updating models and also updating entries
+
+
+### validators
+Found here [link](https://docs.djangoproject.com/en/4.0/ref/validators/)
