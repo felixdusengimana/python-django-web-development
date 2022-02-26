@@ -7,7 +7,7 @@
 <body>
 <ul>
 {% for patient in patients %}
-  <li>{patient.last_name}</li>
+  <li>{{ patient.last_name }} {{ patient.first_name }} is {{ patient.age }} years old.</li>
 {% endfor %}
 </ul>
 </body>
